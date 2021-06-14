@@ -1,0 +1,247 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="862,1128" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="872,963" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="830,83" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="830,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix" sap:VirtualizedContainerService.HintSize="434,821" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,605" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="results" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Accepter'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.kiabi.com/" DesignTimeRectangle="778, 676, 180, 45" ElementType="Button" FriendlyName="'Accepter'" FullSelectorArgument="&lt;webctrl id='popin_tc_privacy_button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='popin_tc_privacy_button' tag='BUTTON' type='button' aaname='Accepter' check:text='Accepter' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAxCAYAAABpjGPXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALpSURBVHhe7Z2xbtRAFEVTIFHwQVQgBYnPQKJEokT0CPEBQA10CFqgQoKKLj10pNqKMhJFaAbdFde8TMYbO2HJ+s250lE29vPzrHxmbG3jvUJI4iA4SZ1Tgr95/bHs37xXrl29Ua7sXQfYeeSqnJW7dU4I/vDBs2YDgKUgh2MGwWV/6wCApRFX8kFwLfGtYoClIZedQXCeuSELctkZBG8VAiwVB8EhJQ6CQ0ocBIeUOAgOKXEQHFLiIDikxEFwSImD4JASB8EhJU6Xgr968e7Pty7l+PhXefL4ZbNuF/n29XA9/tY++IvTpeCSJObzp4Nm3S5x+9b9slr9WI8Xwc/G6U7wu3celaOjn+uV+/D7av3dJY4EatXvCgg+D6c7wf14IlmeP327Fn3sMcWTwdFnbZtboztETBQ0Hv/h/ZcTvXxnqc+hxPNM7R/vXNknidOd4L7IkiKuivVjioSX+HWiWFNq6schZ5O8Mapr1fgc5+k/NqEz4XQleLzYXsEkglI/plgcb29NhrNqPAEso46pt8UxxTFs6u2xX6R/dpyuBJcYSksIoc/a1pKpZkqNJ08rPl8UMPapx9U630X6Z8fpSvCx27njlXmKFFNqNgmo6Dj3iRNM1NvnCq7E/v7f/bPjdCN4vNBj0X7V/esVXHWqb9WMCThnBT9P/+w43Qiui6tY4rjPMimWoH4Gjtv0d0pNq289jihgq4+3CX1WfKeZ2981PeB0I3gUr94X5fH+KE+MV9SpNT5vHUsaBWzFUsYxKj7HnP4InpR4kX3ha3y798qnbbV8UVwzpaaWMI4hHl//Dl4LGSfUpkk01h/B4b/Tq4DbxkHwSwbBt4OD4JcMgm8HB8EhJQ6CQ0ocBIeUOAgOKXEQHFLiIDikxEFwSImD4JASB8EhJQ6CQ0qcQXDe0QNZaL6jh7esQRaab1njPZmQheZ7MhXedAxLZ/RNx47s1xLPMzksBbkqZ+PK7ZwSnJBMQXCSOKX8BrYwsTvAOlC8AAAAAElFTkSuQmCC" InformativeScreenshot="4692cbc3c79c4cf6793ba3088ebdd961.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" SearchSteps="FuzzySelector, Image">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="968, 676, 180, 45" ElementType="Button" FriendlyName="'Paramétrer'" FullSelectorArgument="&lt;webctrl id='popin_tc_privacy_button_2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='popin_tc_privacy_button_2' tag='BUTTON' type='' aaname='Paramétrer' check:text='Paramétrer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAxCAYAAABpjGPXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMZSURBVHhe7Z2hjhRBFEVXkCD4GBIMaklQJPwACcGzKARB4QgCiyAoHJs1fAB4+AAcOMQqsoJA2OCa3GFu521NdU9lQEy9Pid5menqel31pk7XtOuDASAxCA6p2RD85Pj9cPPG0XDl8uFw6eA6Qex9yFU5K3dLLgj++NGL6gUIopeQw5FRcNnvTq9evh1+/vi1PgOw38hVOWt/404+Cq4t3nID9Igll8tmFNzP3Ozc0CtyVw7LZTMKrhMKgJ4pPUZwSAWCQ2oQHFKD4JAaBIfUIDikBsEhNQgOqUFwSE1awb98/jpcu3pvrKOMjx8+rXv2w7Onr1dzP37zbt3yl7Oz78OD+89Xn3ARr7dZjOCKniTXXGtzdp23bz1E8Apea5NOcIW+m/Pz36vdTrVpR+wdBJ9ncYIL/cWrNoku4YX7u25F3C39eKAcyaTvvkG25Xo89fd3H8fzsS3isRWxHu/qMdRXosc5+pznVM43jrkttzc8f7PIHbwmqCLmxsV2SMyW3ChwGXfvPNloU38R51qGhGsR3OH51HIUvtnncnvENZjFPIPXBLRYcZG9c1nwcrFbct3HuVHcWptvPMto+WptrlNjamwR5xBz4xieW9k2ldsrqkNhFiF4lKGk3KktgtstX42pXAsehZlr8xjl9WK4hm2Cew5i7jdRaPyp3F5xbWYRz+AlWkjXW8Y2wVtyS3FFS5vHrIXr+p+CazwE74RWweNftHfT2iJbtihka+6/Ch77lOwi+NxvguCd0Cp4bUH16frdVpOtNXdXwX2tWIP7+Iaq1TklabwhPUbZF8E7oVXwuOi18CJLCB1HIVtzdxV87vq+tut0u/qfnn6blFTH7htDeRoPwTuhVXARF1WhhS1l02c8Ni25uwouapKX4jlPsU1woTb3d47GEQgO0BEIDqlBcEgNgkNqEBxSg+CQGgSH1CA4pAbBITUIDqlBcEgNgkNqEBxSMyk47+iB3pl9Rw9vWYPemX3LGu/JhF6Rq5ZbUX1PpuBNx0TvMfmmYyP7tcX7mZwg9j3kqpyNO7fZEBwgEwgOiRmGP4z4waGAci8EAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Saisie_articles_zone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="maillot de bain">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.kiabi.com/" ContentHash="8CIQbnRfg0akOAUZCgoTuw" DesignTimeRectangle="519, 172, 500, 55" ElementType="InputBox" FriendlyName="'Saisie_articles_zone'" FullSelectorArgument="&lt;webctrl id='autoSearchkeyWords' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autoSearchkeyWords' tag='INPUT' type='' aaname='' /&gt;" ImageBase64="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" InformativeScreenshot="5c57bda532a0bf39fc418a10e931e4c2.png" Reference="Aw0ffR_Fmk2rI6QFtdXv8g/NciQ5_PyY0GE8bMDf7W8Xg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" SearchSteps="FuzzySelector">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="955, 187, 24, 24" ElementType="Icon" FriendlyName="'Saisie_articles_zone'" FullSelectorArgument="&lt;webctrl parentid='autoRecherche' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autoRecherche' tag='svg' type='' aaname='  ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVEhLzZWxS0MxEMY7OCvorKC7opOLouiotHuLjoqii04i6GrfH6B17WBddLOis3UXujp1ci10PvkeJFzyLskVbHH4hvZ9ud/d5ZKU+v0BjVP/D9jtftN945lOjzPaXD+kidIqrSzVaL92TVm9SZ2PL3FdSFFg/aZJM1PbOSQmJCOtlyQCe70fquyei8FDQtWaagtAwBbmKk6wjbWDvNr2Syf3IHDj7on2qleOD0pBC8CTo8wJcHlx63z31Xp4o+nJLetHpZLPyAGiAg4zFaWErnBoLEkHOD9btotQKf+WEio1azFomG7JZ4HI0iwAGL+5UaPyzpmNEeqOBfJ2YiE3aYXBMjFCbbVAjTklnjQmWPJYICDGjP3gJq2wbyYGjpLkEYF/UWESqGlHSkPtIW8Hbhpu0orfPLiJJI8FQtrDK4l3CHFCx8oB8sMLaZ8e//6NJesAIX54cWOkJhZJcVisOqgAhJm3FsJT9dh6t9cVPK/tz/wd5D6j0P5BBSCErJcXq2IwrVRD44ufzZhw5qQkJWgUCCEQwNhb/pogOP7DdBovWu1D/RlIAn3FBgLyoRg8Pu1DAzXiUH9qRwKEADF7y/8fGTCkMQMH9AtVh+VnpWQljgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'chrome.exe KIABI'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="cdb1975c-e7c7-4ab6-a1a9-234eb22050c1" InformativeScreenshot="441dcfe440c60121fa7e49ca950d5f40">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="ySTSXLmzK0CJdye3y5JX1A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ZbZjtowFIZ5pD5gKw37Fghb2PfthbjpXEzFDSoIJCSkssMZ/0kcMsETOKPetZZ+JSDh77Oxjx3431RtNBoRMhwOaTAYUL/fp16vT91ej7rdLnU6HWq329RqtanZalGj2aR6o0H1eoNqtTq+W+u6/s3ujt8Av1wudzm7c/bmTNfrlcbjMU2nUwh9XQIjB/B0OtEROcoc6SBzsJ578bRyMCUgsNls6O3tF1Vrta9JYNpVAg4c7z4C6/WaVqsV/Xx9pXKlypfAfw4BE64SANwB3wssl0taLBY0m81oMpmQYZTXdtfPNSw4R8CG302/C+wV0DTtQ3KFAtldP9ew2k0BB+4z/fubAN7nYuS/5zJzMRsryuXzTAGx1aTADeyCm0B3IGEJ7NzZ7cU6OpOeYwpgn2OrPYQLiCOAdzd8v3cEsnqOJ4AiYwlgBm5gM0LmNmr59MItga0tkMnqPAFUOBQXNRifJdwWEEDV6KWAls3yBFBezRnwgM0A5nxWwS0BwKVAOpPhCaC2YwbuwIgE+8Dl6B0BjSmAgwV72oG4RRhwKZBKa0wBcap9nAEb6gsX8cAtgRMlU2meAI5UZwY8UCVYMXIZVNNEKsUTEKeYJSA69wcjn8O3250pEE8yBSrVKp2EgBrojj/8jy0QSyR5AuVK5YGABX4EdwTiCZ6AUfYKCJiMAHwKRlxwKRCNxZkCRtncPhL2EGrHDXYLRGIxnkDJMEwBFUQZBVgGAuEoU6BYKj0noAB6A4FQJMoTKBT9BHZPgWUgEAxHeAL5QtGsYBLGAXpjCoTCPAHc4fBDVYfcoJ8XtoC4w+GHfys/giGeAO5wuEbhJoPLBM5zHKk41XCwoLajvKLCochgn2OrYbVjweE/x7Rj5IB/fwnyBP6hFgi8AwRoYggdfvh1AAAAAElFTkSuQmCC" InformativeScreenshot="f1e5df92943b1a08d3430652d740c851.png" Reference="Aw0ffR_Fmk2rI6QFtdXv8g/IilcozGNRESc4RKIMSHcQw" Selector="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" Url="https://www.kiabi.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="830,642" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix" sap:VirtualizedContainerService.HintSize="788,550" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="txt_results" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" Expression="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,240" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Réinitialiser'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kiabi.com/" DesignTimeRectangle="1067, 172, 86, 17" ElementType="Text" FriendlyName="'449 résultats'" FullSelectorArgument="&lt;webctrl aaname='449 résultats' parentid='autoRecherche' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autoRecherche' tag='SPAN' type='' /&gt;" InformativeScreenshot="b1bb326f3400c986ceb5ea25bea9d7ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="949, 169, 67, 15" ElementType="Text" FriendlyName="'Réinitialiser'" FullSelectorArgument="&lt;webctrl parentid='resetSearch' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='resetSearch' tag='DIV' type='' aaname='Réinitialiser' check:text='Réinitialiser' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAATCAYAAADCrxD+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH3SURBVFhH7ZSxSgNREEUt/B0Lq/xA0C8QxFaw0R+wEBs/wkqstVBsRe2ttIsQiEgCWgQh4LYrZ+WuNy9vd5MlFsIrLnnz3szcO9dZVyaTrxxkWZYQIJlTg2RODZI5NSjNGQ7f883uQb660pnB/d3jTOF4/Jnv7Z7kx0en5R1nj6tAP7jg9Hv1PD+7mboP4Xnz1rTBjDmhEZDGBiEvNKKNOfRnOIb8d+ZU3S8Lbk7sPYa/NMTRyhy2Q5+cb4pvDr8MQC1562s7+fPTS/Gmzbm+eij7kDsafUwNTT51IVfd5pDjPd10cmJv6NneOizgOhf+rIjVOCbMzXEiYtXJHHpW9dNZeuiz0d0vfmN5nMlVL3FKm3PqTVp5wzBxCY3/kH3AUDBwQU7oZ+AmuFC/V38N5KBGWjzPz+TEhgRo8b70YVPQ4Hq8pnJzROoDVhmoxm6In4Gb4GL83gdVD3GwNU2bQ40MEoiV4/dAZi9sDtCdiEXiOY5lmoNomUG9x57nZ3E5p3jQEssBrcwBxP5pQaBhiCFV7Ib4Oayb1xx4pYdeTZ+V96KGWsXOKT2Kwzeh0RyRezFCtZrhvQzxM3DhLkYmEPf7b+WgIc/lxW2pzw3xc1jjf1RpiL01muOXCT8ozOn1XktHEzr5YDD8NSdtThzJnBokcyqR5d/wJ8+P6wIqiAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[txt_results]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object">
+                            <VariableValue.Variable>
+                              <Variable x:TypeArguments="x:Object" Name="Text" />
+                            </VariableValue.Variable>
+                          </VariableValue>
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              </uta:VerifyControlAttribute>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVFhH7ZbZjtowFIZ5pL5gq2HfAmHf9+2FuOlcTMUNKgikSEhlhzP+kzhkgidwRr1rLf1KcoG/z8Y+duB/U7XxeEzIaDSi4XBIg8GA+v0B9fp96vV61O12qdPpULvdoVa7Tc1WixrNJjUaTarXG9TudIxSqfTN7o7fAL9cLnc5u3P25kzX65UmkwnNZjNIfV0CIwfwdDrRETnKHOkgc7Cee/G0cjAlILDZbOjt7RfVGw1D/4oEpl0l4MDx7iNgGAat12v6+fpK1Vrd0HWdJ4H/HAImXCUAuAO+F1itVrRcLmk+n9N0OqVKpWrYXT/XsOAcARt+N/0usFdA07QPyRUKZHf9XMNqNwUcuM/0728CeF+Ikf9eyCzEbKwpl88zBcRWkwI3sAtuAt2BhCWwc2e3F+voTHqOKYB9jq32EC4gjgDe3fD93hHI6jmeAIqMJYAZuIHNCJnbqOXTC7cEtrZAJqvzBFDhUFzUYHxLuC0ggKrRSwEtm+UJoLyaM+ABmwHM+VbBLQHApUA6k+EJoLZjBu7AiAT7wOXoHQGNKYCDBXvagbhFGHApkEprTAFxqn2cARvqCxfxwC2BEyVTaZ4AjlRnBjxQJVgxchlU00QqxROo1euWgOjcH4x8Dt9ud6ZAPMkUqNZqdBICaqA7/vA/tkAskeQJVKrVBwIW+BHcEYgneALlildAwGQE4FMw4oJLgWgszhQoV8ztI2EPoXbcYLdAJBbjCZTKZVNABVFGAZaBQDjKFCiWSs8JKIDeQCAUifIECkU/gd1TYBkIBMMRnkC+UDQrmIRxgN6YAqEwTwB3OPxQ1SE36OeFLSDucPjh38qPYIgngDscrlG4yeAygfMcRypONRwsqO0or6hwKDLY59hqWO1YcPjPMe0YOeDfX4I8gX+oBQLvEwJiQgPuVJwAAAAASUVORK5CYII=" InformativeScreenshot="06be7120b1eb3db34997b90ce02afc43.png" Selector="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix'/&gt;" Url="https://www.kiabi.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

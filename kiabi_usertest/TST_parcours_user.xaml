@@ -1,0 +1,302 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" this:TestCase.Articles="maillot de bain" this:TestCase.Messages_Expected="585 résultats" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Articles" Type="InArgument(x:String)" />
+    <x:Property Name="Messages_Expected" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>821,888</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TestCase_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="480,723" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,631" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="242,404" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="results" />
+            <Variable x:TypeArguments="x:Boolean" Name="my_resut" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+          <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="476,374" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix" sap:VirtualizedContainerService.HintSize="434,282" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,1084" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="trouve" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="Element Exists 'BUTTON  popin_tc_privac...'" Exists="[trouve]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="85b12389-c4a6-4d6e-976e-eb46a61d49cf" InformativeScreenshot="b584b1529595afb6feea3e11dadfa198" Selector="&lt;webctrl id='popin_tc_privacy_button' tag='BUTTON' type='button' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[trouve]" sap:VirtualizedContainerService.HintSize="484,343" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'Accepter'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.kiabi.com/" DesignTimeRectangle="778, 676, 180, 45" ElementType="Button" FriendlyName="'Accepter'" FullSelectorArgument="&lt;webctrl id='popin_tc_privacy_button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='popin_tc_privacy_button' tag='BUTTON' type='button' aaname='Accepter' check:text='Accepter' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAxCAYAAABpjGPXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALpSURBVHhe7Z2xbtRAFEVTIFHwQVQgBYnPQKJEokT0CPEBQA10CFqgQoKKLj10pNqKMhJFaAbdFde8TMYbO2HJ+s250lE29vPzrHxmbG3jvUJI4iA4SZ1Tgr95/bHs37xXrl29Ua7sXQfYeeSqnJW7dU4I/vDBs2YDgKUgh2MGwWV/6wCApRFX8kFwLfGtYoClIZedQXCeuSELctkZBG8VAiwVB8EhJQ6CQ0ocBIeUOAgOKXEQHFLiIDikxEFwSImD4JASB8EhJU6Xgr968e7Pty7l+PhXefL4ZbNuF/n29XA9/tY++IvTpeCSJObzp4Nm3S5x+9b9slr9WI8Xwc/G6U7wu3celaOjn+uV+/D7av3dJY4EatXvCgg+D6c7wf14IlmeP327Fn3sMcWTwdFnbZtboztETBQ0Hv/h/ZcTvXxnqc+hxPNM7R/vXNknidOd4L7IkiKuivVjioSX+HWiWFNq6schZ5O8Mapr1fgc5+k/NqEz4XQleLzYXsEkglI/plgcb29NhrNqPAEso46pt8UxxTFs6u2xX6R/dpyuBJcYSksIoc/a1pKpZkqNJ08rPl8UMPapx9U630X6Z8fpSvCx27njlXmKFFNqNgmo6Dj3iRNM1NvnCq7E/v7f/bPjdCN4vNBj0X7V/esVXHWqb9WMCThnBT9P/+w43Qiui6tY4rjPMimWoH4Gjtv0d0pNq289jihgq4+3CX1WfKeZ2981PeB0I3gUr94X5fH+KE+MV9SpNT5vHUsaBWzFUsYxKj7HnP4InpR4kX3ha3y798qnbbV8UVwzpaaWMI4hHl//Dl4LGSfUpkk01h/B4b/Tq4DbxkHwSwbBt4OD4JcMgm8HB8EhJQ6CQ0ocBIeUOAgOKXEQHFLiIDikxEFwSImD4JASB8EhJQ6CQ0qcQXDe0QNZaL6jh7esQRaab1njPZmQheZ7MhXedAxLZ/RNx47s1xLPMzksBbkqZ+PK7ZwSnJBMQXCSOKX8BrYwsTvAOlC8AAAAAElFTkSuQmCC" InformativeScreenshot="4692cbc3c79c4cf6793ba3088ebdd961.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" SearchSteps="FuzzySelector, Image">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="968, 676, 180, 45" ElementType="Button" FriendlyName="'Paramétrer'" FullSelectorArgument="&lt;webctrl id='popin_tc_privacy_button_2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='popin_tc_privacy_button_2' tag='BUTTON' type='' aaname='Paramétrer' check:text='Paramétrer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAxCAYAAABpjGPXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMZSURBVHhe7Z2hjhRBFEVXkCD4GBIMaklQJPwACcGzKARB4QgCiyAoHJs1fAB4+AAcOMQqsoJA2OCa3GFu521NdU9lQEy9Pid5menqel31pk7XtOuDASAxCA6p2RD85Pj9cPPG0XDl8uFw6eA6Qex9yFU5K3dLLgj++NGL6gUIopeQw5FRcNnvTq9evh1+/vi1PgOw38hVOWt/404+Cq4t3nID9Igll8tmFNzP3Ozc0CtyVw7LZTMKrhMKgJ4pPUZwSAWCQ2oQHFKD4JAaBIfUIDikBsEhNQgOqUFwSE1awb98/jpcu3pvrKOMjx8+rXv2w7Onr1dzP37zbt3yl7Oz78OD+89Xn3ARr7dZjOCKniTXXGtzdp23bz1E8Apea5NOcIW+m/Pz36vdTrVpR+wdBJ9ncYIL/cWrNoku4YX7u25F3C39eKAcyaTvvkG25Xo89fd3H8fzsS3isRWxHu/qMdRXosc5+pznVM43jrkttzc8f7PIHbwmqCLmxsV2SMyW3ChwGXfvPNloU38R51qGhGsR3OH51HIUvtnncnvENZjFPIPXBLRYcZG9c1nwcrFbct3HuVHcWptvPMto+WptrlNjamwR5xBz4xieW9k2ldsrqkNhFiF4lKGk3KktgtstX42pXAsehZlr8xjl9WK4hm2Cew5i7jdRaPyp3F5xbWYRz+AlWkjXW8Y2wVtyS3FFS5vHrIXr+p+CazwE74RWweNftHfT2iJbtihka+6/Ch77lOwi+NxvguCd0Cp4bUH16frdVpOtNXdXwX2tWIP7+Iaq1TklabwhPUbZF8E7oVXwuOi18CJLCB1HIVtzdxV87vq+tut0u/qfnn6blFTH7htDeRoPwTuhVXARF1WhhS1l02c8Ni25uwouapKX4jlPsU1woTb3d47GEQgO0BEIDqlBcEgNgkNqEBxSg+CQGgSH1CA4pAbBITUIDqlBcEgNgkNqEBxSMyk47+iB3pl9Rw9vWYPemX3LGu/JhF6Rq5ZbUX1PpuBNx0TvMfmmYyP7tcX7mZwg9j3kqpyNO7fZEBwgEwgOiRmGP4z4waGAci8EAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                      </If.Then>
+                    </If>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT autoSearchkeyWords'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="WindowMessages" Text="[Articles]">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kiabi.com/" DesignTimeRectangle="519, 172, 500, 55" ElementType="InputBox" FriendlyName="'INPUT autoSearchkeyWords'" FullSelectorArgument="&lt;webctrl id='autoSearchkeyWords' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autoSearchkeyWords' tag='INPUT' type='' aaname='' /&gt;" ImageBase64="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" InformativeScreenshot="d552341c867fabf1ac2a8a09d3c41782.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="955, 187, 24, 24" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='autoRecherche' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autoRecherche' tag='svg' type='' aaname='  ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVEhLzZWxS0MxEMY7OCvorKC7opOLouiotHuLjoqii04i6GrfH6B17WBddLOis3UXujp1ci10PvkeJFzyLskVbHH4hvZ9ud/d5ZKU+v0BjVP/D9jtftN945lOjzPaXD+kidIqrSzVaL92TVm9SZ2PL3FdSFFg/aZJM1PbOSQmJCOtlyQCe70fquyei8FDQtWaagtAwBbmKk6wjbWDvNr2Syf3IHDj7on2qleOD0pBC8CTo8wJcHlx63z31Xp4o+nJLetHpZLPyAGiAg4zFaWErnBoLEkHOD9btotQKf+WEio1azFomG7JZ4HI0iwAGL+5UaPyzpmNEeqOBfJ2YiE3aYXBMjFCbbVAjTklnjQmWPJYICDGjP3gJq2wbyYGjpLkEYF/UWESqGlHSkPtIW8Hbhpu0orfPLiJJI8FQtrDK4l3CHFCx8oB8sMLaZ8e//6NJesAIX54cWOkJhZJcVisOqgAhJm3FsJT9dh6t9cVPK/tz/wd5D6j0P5BBSCErJcXq2IwrVRD44ufzZhw5qQkJWgUCCEQwNhb/pogOP7DdBovWu1D/RlIAn3FBgLyoRg8Pu1DAzXiUH9qRwKEADF7y/8fGTCkMQMH9AtVh+VnpWQljgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  autoSearchkeyWor...'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6a39e26-b270-45b6-9d54-0de44ffd8b68" InformativeScreenshot="18f8943a372182223f78079178df5beb" Selector="&lt;webctrl id='autoSearchkeyWords' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_4" Operator="Equality" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                      <uta:VerifyControlAttribute.ActivityToTest>
+                        <ActivityAction>
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ee0a158-4112-497f-a894-6486787952d2" InformativeScreenshot="6d730f163e1399dcf38c46d7ff0ae8b1" Selector="&lt;webctrl aaname='* résultats' parentid='autoRecherche' tag='SPAN' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[results]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                        </ActivityAction>
+                      </uta:VerifyControlAttribute.ActivityToTest>
+                      <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                        <ActivityFunc x:TypeArguments="x:Object">
+                          <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_4">
+                            <uta:ArgumentsBridge.Input>
+                              <InArgument x:TypeArguments="x:Object">
+                                <VariableValue x:TypeArguments="x:Object">
+                                  <VariableValue.Variable>
+                                    <Variable x:TypeArguments="x:Object" Name="Value" />
+                                  </VariableValue.Variable>
+                                </VariableValue>
+                              </InArgument>
+                            </uta:ArgumentsBridge.Input>
+                          </uta:ArgumentsBridge>
+                        </ActivityFunc>
+                      </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <uta:VerifyControlAttribute.Expression>
+                        <InArgument x:TypeArguments="x:String">[Messages_Expected]</InArgument>
+                      </uta:VerifyControlAttribute.Expression>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uta:VerifyControlAttribute>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVFhH7ZbZjtowFIZ5pL5gq2HfAmHf9+2FuOlcTMUNKgikSEhlhzP+kzhkgidwRr1rLf1KcoG/z8Y+duB/U7XxeEzIaDSi4XBIg8GA+v0B9fp96vV61O12qdPpULvdoVa7Tc1WixrNJjUaTarXG9TudIxSqfTN7o7fAL9cLnc5u3P25kzX65UmkwnNZjNIfV0CIwfwdDrRETnKHOkgc7Cee/G0cjAlILDZbOjt7RfVGw1D/4oEpl0l4MDx7iNgGAat12v6+fpK1Vrd0HWdJ4H/HAImXCUAuAO+F1itVrRcLmk+n9N0OqVKpWrYXT/XsOAcARt+N/0usFdA07QPyRUKZHf9XMNqNwUcuM/0728CeF+Ikf9eyCzEbKwpl88zBcRWkwI3sAtuAt2BhCWwc2e3F+voTHqOKYB9jq32EC4gjgDe3fD93hHI6jmeAIqMJYAZuIHNCJnbqOXTC7cEtrZAJqvzBFDhUFzUYHxLuC0ggKrRSwEtm+UJoLyaM+ABmwHM+VbBLQHApUA6k+EJoLZjBu7AiAT7wOXoHQGNKYCDBXvagbhFGHApkEprTAFxqn2cARvqCxfxwC2BEyVTaZ4AjlRnBjxQJVgxchlU00QqxROo1euWgOjcH4x8Dt9ud6ZAPMkUqNZqdBICaqA7/vA/tkAskeQJVKrVBwIW+BHcEYgneALlildAwGQE4FMw4oJLgWgszhQoV8ztI2EPoXbcYLdAJBbjCZTKZVNABVFGAZaBQDjKFCiWSs8JKIDeQCAUifIECkU/gd1TYBkIBMMRnkC+UDQrmIRxgN6YAqEwTwB3OPxQ1SE36OeFLSDucPjh38qPYIgngDscrlG4yeAygfMcRypONRwsqO0or6hwKDLY59hqWO1YcPjPMe0YOeDfX4I8gX+oBQLvEwJiQgPuVJwAAAAASUVORK5CYII=" InformativeScreenshot="c854ff04211c939aa909e020711c393f.png" Selector="&lt;html app='chrome.exe' title='KIABI - Vêtements, Chaussures, Accessoires - Mode à Petits Prix'/&gt;" Url="https://www.kiabi.com/" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="si:IOException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+            </ActivityAction.Argument>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Erreur catchée" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[1=2]" sap:VirtualizedContainerService.HintSize="534,61" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
